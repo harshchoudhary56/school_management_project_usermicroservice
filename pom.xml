@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.server.security</groupId>
-	<artifactId>school_management_system_usermicroservice</artifactId>
+	<artifactId>user_microservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>school_management_system_usermicroservice</name>
 	<description>school_management_system_usermicroservice</description>
