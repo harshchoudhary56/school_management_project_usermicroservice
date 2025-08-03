@@ -1,6 +1,7 @@
 spring:
   cloud:
     config:
-    uri: http://localhost:8888  # Config Server URL
+      import: "optional:config-server:http://localhost:8888"
+#    uri: http://localhost:8888  # Config Server URL
   profiles:
     active: dev
