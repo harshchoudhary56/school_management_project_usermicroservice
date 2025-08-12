@@ -62,6 +62,7 @@
     <include file="changelog/linkSectionTeacher/create-link-section-teacher-schema.xml" relativeToChangelogFile="true"/>
     <include file="changelog/book/create-book-schema.xml" relativeToChangelogFile="true"/>
     <include file="changelog/linkSectionSubjectBook/create-link-section-subject-book-schema.xml" relativeToChangelogFile="true"/>
+    <include file="/changelog/user/alter-user-schema.xml" relativeToChangelogFile="true"/>
 
 
 </databaseChangeLog>

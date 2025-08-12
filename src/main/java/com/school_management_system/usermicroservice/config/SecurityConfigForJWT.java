@@ -22,6 +22,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 @Configuration
 @EnableWebSecurity
@@ -64,7 +65,7 @@ public class SecurityConfigForJWT {
 
 
         http.authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/generate token", "/refresh-token", "/api/user-register").permitAll()
+                        .requestMatchers("/user/auth/generate-token", "/user/auth/refresh-token", "/user/auth/register").permitAll()
                         .anyRequest().authenticated())
                 .sessionManagement(session -> session
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS))

@@ -25,15 +25,17 @@ public class JWTRefreshFilter extends OncePerRequestFilter {
                                     HttpServletResponse response,
                                     FilterChain filterChain) throws ServletException, IOException {
 
-        if (!request.getServletPath().equals("/refresh-token")) {
+        if (!request.getServletPath().equals("/user/auth/refresh-token")) {
             filterChain.doFilter(request, response);
             return;
         }
+
         String refreshToken = extractJwtFromRequest(request);
         if (refreshToken == null) {
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
             return;
         }
+
         JWTAuthenticationToken authenticationToken = new JWTAuthenticationToken(refreshToken);
         Authentication authResult = authenticationManager.authenticate(authenticationToken);
         if(authResult.isAuthenticated()) {
