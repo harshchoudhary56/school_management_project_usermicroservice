@@ -64,5 +64,13 @@
     <include file="changelog/linkSectionSubjectBook/create-link-section-subject-book-schema.xml" relativeToChangelogFile="true"/>
     <include file="/changelog/user/alter-user-schema.xml" relativeToChangelogFile="true"/>
 
+<!--    <includes ></includes>-->
+    <include file="/changelog/department/insert-department-data.xml" relativeToChangelogFile="true"/>
+    <include file="/changelog/class/insert-class-data.xml" relativeToChangelogFile="true"/>
+    <include file="/changelog/section/insert-section-data.xml" relativeToChangelogFile="true"/>
+    <include file="/changelog/subject/insert-subject-data.xml" relativeToChangelogFile="true"/>
+    <include file="/changelog/linkSubjectDepartment/insert-link-subject-department-data.xml" relativeToChangelogFile="true"/>
+
+
 
 </databaseChangeLog>
