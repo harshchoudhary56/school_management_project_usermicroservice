@@ -70,6 +70,9 @@
     <include file="/changelog/section/insert-section-data.xml" relativeToChangelogFile="true"/>
     <include file="/changelog/subject/insert-subject-data.xml" relativeToChangelogFile="true"/>
     <include file="/changelog/linkSubjectDepartment/insert-link-subject-department-data.xml" relativeToChangelogFile="true"/>
+    <include file="/changelog/book/alter-book-schema.xml" relativeToChangelogFile="true"/>
+    <include file="/changelog/book/insert-book-data.xml" relativeToChangelogFile="true"/>
+    <include file="/changelog/linkSectionSubjectBook/insert-link-section-subject-book-data.xml" relativeToChangelogFile="true"/>
 
 
 
